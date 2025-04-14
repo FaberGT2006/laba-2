@@ -23,6 +23,17 @@ public:
         this->price = price;
         this->count = count;
     }
+// Р“РµС‚С‚РµСЂС‹
+    int getId() const { return id; }
+    string getName() const { return name; }
+    double getPrice() const { return price; }
+    int getCount() const { return count; }
+
+    // РЎРµС‚С‚РµСЂС‹
+    void setId(int id) { this->id = id; }
+    void setName(const string& name) { this->name = name; }
+    void setPrice(double price) { this->price = price; }
+    void setCount(int count) { this->count = count; }
 
     Product() : id(0), name(""), price(0), count(0) {};
 
@@ -73,8 +84,8 @@ class Database
 {
 private:
     Product* products;
-    int size; // текущее кол-во товаров
-    int capacity; // максимальное вместить массива
+    int size; // ГІГҐГЄГіГ№ГҐГҐ ГЄГ®Г«-ГўГ® ГІГ®ГўГ Г°Г®Гў
+    int capacity; // Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ ГўГ¬ГҐГ±ГІГЁГІГј Г¬Г Г±Г±ГЁГўГ 
     string filename;
 
 public:
